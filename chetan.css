@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/1201112854/photo/quiz-torn-paper-concept.webp?s=2048x2048&w=is&k=20&c=SKS_4b8-HhsKOzssOPedidq-c_i3IbH4GCYK9JVA3Y0=");
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the background is behind the content */
+    opacity: 0.4; /* Adjust the opacity as needed */
+  }
+  
+  .content {
+    position: relative; /* Ensure the content appears above the background */
+    z-index: 1; /* Ensure the content is in front of the background */
+    padding: 20px;
+    color: black; /* Example text color */
+    text-align: center;
+  }
+  
+  .options {
+    margin-top: 20px;
+    
+  }
+  
+  .options a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .options a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  h1{
+    font-size: 60px;
+  }
+  p{
+    font-size: 40px;
+  }
+  footer {
+    background-color: aliceblue;
+    font-size: 25px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+a{
+  font-size:25px;
+  background-color: black;
+}

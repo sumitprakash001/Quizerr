@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial 2', cursive;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
+  
+  nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #0d0d0d52;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    /* text-transform: uppercase; */
+  }
+  
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 3px 4px 2px black;
+  }
+  
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2px;
+    position: relative;
+  }
+  
+  nav .menu a:hover {
+    color: #00fc13;
+  }
+  
+  nav .menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    /* background-color: #b200fc; */
+    transition: all 0.3s linear;
+  }
+  
+  nav .menu a:hover::before {
+    width: 100%;
+  }
+  
+  nav .menu a:first-child {
+    color: #00fc13;
+  }
+  
+  main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+  main::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: url('background pic.jpg') center center/cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  section h3 {
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
+  }
+  
+  section h1 {
+    margin: 14px 0px 18px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  section p {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 45px;
+  }
+  
+  section a {
+    padding: 9px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 14px;
+  }
+  
+  section .btn1 {
+    background-color: #fff;
+    color: black;
+  }
+  
+  section .btn1:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s linear;
+  }
+  
+  section .btn2 {
+    background-color: #00fc13;
+    color: black;
+  }
+  
+  section .btn2:hover {
+    background-color: #b200fc;
+    color: #fff;
+    transition: all 0.3s linear;
+  }
+  
+  .nameslideshow:after {
+    color: #00fc13;
+    animation: changename 7s infinite linear;
+    content: '';
+  }
+  
+  @keyframes changename{
+    0% { content: "ARTIFICIAL INTELLIGENCE"}
+    25% { content: "MATHs"}
+    50% { content: "GENERAL KNOWLEDGE"}
+    75% { content: "English"}
+    100% { content: "History"}
+  }
+
+  .photo-container {
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    width: 100px;  
+    height: auto;
+    opacity: 0.6;
+  }
+  
+  .photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+ .information {
+  background-color: #333333;
+  padding: 10px;
+  color: #00fc13;
+  line-height: 6;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.information {
+  text-decoration: none;
+  color: #00fc13;
+  padding-left: 40px;
+}
+
+.text1 {
+  line-height: 1;
+  padding-top: 60px;
+}
+
+.text2 {
+  line-height: 1;
+  padding-right: 50px;
+  padding-top: 60px;
+}
+
+.text3 {
+  line-height: 1;
+  /* padding-top: 60px; */
+}
+
+
+
+footer{
+  background-color: rgb(23, 53, 105);
+  padding: 10px;
+  text-align: center;
+  color: #00fc13;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialicons a{
+  text-decoration: none;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  /* background-color: white; */
+  border-radius: 50%;
+  margin: 10px;
+
+}
+
+.socialicons a:hover{
+  background-color: white;
+  transition: 0.5s;
+}
+
+.footernav {
+  margin: 30px 0;
+}
+
+.footernav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footernav ul li {
+  list-style-type: none;
+}
+
+.footernav ul li a {
+  color: white !important;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+
+
